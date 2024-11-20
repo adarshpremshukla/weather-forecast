@@ -1,0 +1,129 @@
+.total-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  padding: 20px;
+  background-image: url("./images/neom-9hWJs7iblh8-unsplash (2).jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.weather-middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Limit width for better responsiveness */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-section > input {
+  flex: 1; /* Allow input to take available space */
+  background-color: #dddddd;
+  color: rgb(151, 148, 148);
+  padding: 12px 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  /* box-shadow: 0 3px 0 rgb(163, 162, 162); */
+}
+
+.search-section > button {
+  background-color: rgb(114, 112, 112);
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  margin-left: -1px; /* Remove gap between input and button */
+}
+
+.city-and-date {
+  text-align: center;
+  color: white;
+  margin: 30px 0 50px;
+}
+
+.city-and-date > p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.temp {
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 8px 0 rgb(88, 85, 85);
+}
+
+.weather-type > h3 {
+  font-style: italic;
+  color: white;
+  margin: 30px 0 12px;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 0 4px 0 rgb(82, 79, 79);
+}
+
+.weather-type > p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+  .total-section {
+    padding: 10px;
+  }
+
+  .weather-middle-section {
+    max-width: 90%; /* Take almost full width */
+    padding: 15px;
+  }
+
+  .search-section {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center;
+  }
+
+  .search-section > input {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%; /* Full width for better usability */
+  }
+
+  .search-section > button {
+    border-radius: 8px;
+    width: 100%; /* Match input width */
+  }
+
+  .temp {
+    font-size: 50px;
+  }
+
+  .weather-type > h3 {
+    font-size: 18px;
+  }
+
+  .weather-type > p {
+    font-size: 12px;
+  }
+}
